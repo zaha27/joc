@@ -11,8 +11,10 @@
                 "-I/opt/homebrew/opt/sdl2/include",
                 "-L/opt/homebrew/opt/sdl2/lib",
                 "-lSDL2",
-                "${file}",
+                "${fileDirname}/*.cpp",
                 "-o",
+                "${fileDirname}/joc",
+                "&&",
                 "${fileDirname}/joc"
             ],
             "options": {
